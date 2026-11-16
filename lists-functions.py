@@ -14,6 +14,21 @@ del things[2]
 print(things)
 
 # Define a function called good() that returns the following list: ['Harry', 'Ron', 'Hermione'].
-
+def good():
+  return ["Harry", "Ron", "Hermione"]
+  print(good())
 
 # Define a generator function called get_odds() that returns the odd numbers from range(10). Use a for loop to find and print the third value returned.
+def get_odds():
+  for number in range(10):
+    if number % 2 !=0:
+      yield number 
+      
+count = 0
+
+for odd in get_odds():
+  count += 1
+  if count == 3
+    print(odd)
+  
+# Honestly, I don't know if this is the best way to complete this, but this is how I did it.
